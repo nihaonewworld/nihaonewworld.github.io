@@ -1,3 +1,3 @@
-// Add the public contact email here to enable the email link and draft form.
-// Leave blank to display the collaboration brief instead.
+// Public contact address. Keep the static email link in index.html in sync
+// so visitors can also contact you without JavaScript.
 window.siteConfig = { email: 'qcao2020@outlook.com' };
