@@ -3,29 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bioinformatics Engineer specializing in NGS data analysis: epigenomics, transcriptomics, single-cell, and spatial transcriptomics. Building reproducible computational pipelines and knowledge bases.">
-  <meta name="author" content="Bioinformatics Engineer">
+  <meta name="description" content="Qiang is a bioinformatics engineer working on gene regulation, multi-omics, single-cell and spatial analysis. Explore research, co-first-author publications and reusable analysis knowledge.">
+  <meta name="author" content="Qiang">
   <meta name="keywords" content="bioinformatics, NGS, epigenomics, transcriptomics, single-cell, spatial transcriptomics, RNA-seq, ChIP-seq, ATAC-seq, scRNA-seq, R, Bioconductor, Snakemake, AIDD">
-  <meta property="og:title" content="Bioinformatics Engineer | Personal Website">
-  <meta property="og:description" content="NGS data analysis across multi-omics, single-cell, and spatial transcriptomics. Exploring AIDD and virtual cell technologies.">
+  <meta property="og:title" content="Qiang | Bioinformatics &amp; Multi-omics">
+  <meta property="og:description" content="Explore Qiang’s work in gene regulation, multi-omics and reproducible bioinformatics, including two co-first-author studies and a personal analysis knowledge base.">
   <meta property="og:type" content="website">
-  <title>Bioinformatics Engineer | Personal Website</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Qiang | Bioinformatics &amp; Multi-omics</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="color-scheme" content="light dark">
+  <noscript><style>
+    .nav-actions { display: none; }
+    @media (max-width: 768px) {
+      .navbar { position: relative; height: auto; }
+      .nav-container { flex-wrap: wrap; padding-top: 16px; }
+      .nav-menu { position: static; flex-direction: row; flex-wrap: wrap; gap: 12px 20px; padding: 16px 0; transform: none; opacity: 1; visibility: visible; box-shadow: none; }
+    }
+  </style></noscript>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F9EC;</text></svg>">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <!-- Progress Bar -->
   <div class="progress-bar" id="progressBar"></div>
 
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
         <span class="logo-icon">&#x1F9EC;</span>
-        <span class="logo-text">Bio<span class="accent">Info</span></span>
+        <span class="logo-text">Qiang<span class="accent">.</span></span>
       </a>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#about" class="nav-link">About</a></li>
@@ -52,7 +59,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
           <span></span>
           <span></span>
           <span></span>
@@ -61,24 +68,26 @@
     </div>
   </nav>
 
+  <main id="main">
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
+    <div class="hero-bg" aria-hidden="true">
       <div class="hero-grid"></div>
       <div class="hero-orb orb-1"></div>
       <div class="hero-orb orb-2"></div>
     </div>
     <div class="hero-content">
+      <p class="hero-eyebrow">BIOINFORMATICS · MULTI-OMICS · REPRODUCIBLE SCIENCE</p>
       <h1 class="hero-title reveal" style="--delay: 0.1s">
-        Hi, I'm a <span class="gradient-text">Bioinformatics Engineer</span>
+        From sequencing data<br>to <span class="gradient-text">biological insight.</span>
       </h1>
       <p class="hero-subtitle reveal" style="--delay: 0.2s">
-        NGS data analysis across <strong>multi-omics</strong> — epigenomics, transcriptomics,<br>
-        <strong>single-cell</strong> and <strong>spatial transcriptomics</strong>.
+        I’m Qiang, a bioinformatics engineer connecting <strong>multi-omics</strong>,<br>
+        <strong>single-cell</strong> and <strong>spatial transcriptomics</strong> through reproducible analysis.
       </p>
       <div class="hero-cta reveal" style="--delay: 0.3s">
         <a href="#projects" class="btn btn-primary">
-          View Projects
+          Explore My Work
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
@@ -86,7 +95,8 @@
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
-    <a href="#about" class="scroll-indicator">
+    <div class="hero-path" aria-label="Analysis approach"><span>01 / Question</span><span aria-hidden="true">→</span><span>02 / Analysis</span><span aria-hidden="true">→</span><span>03 / Insight</span></div>
+    <a href="#about" class="scroll-indicator" aria-label="Read about me">
       <span class="mouse">
         <span class="wheel"></span>
       </span>
@@ -103,27 +113,26 @@
       <div class="about-grid">
         <div class="about-text reveal">
           <p class="about-lead">
-            Bioinformatics engineer focused on NGS data analysis and interpretation.
+            I study gene regulation through sequencing data.
           </p>
           <p>
-            My work covers multi-omics — epigenomics, transcriptomics, single-cell, and spatial
-            transcriptomics. I am involved throughout the data lifecycle: experimental design,
-            sequencing data processing, statistical analysis, and biological interpretation.
+            My work connects transcriptomics and epigenomics with single-cell and spatial
+            analysis. I work from experimental design and data processing through statistical
+            analysis to biological interpretation, with an emphasis on integrating evidence
+            across assays.
           </p>
           <p>
-            A core part of my work is multi-layer data integration — combining epigenomic,
-            transcriptomic, and single-cell evidence into coherent biological conclusions.
-            My analytical frameworks are designed to be statistically rigorous and reproducible,
-            so that findings can be revisited, extended, and reused across projects.
+            My co-first-author publications explore epigenetic and transcriptional changes
+            during cerebral cortex development, and the relationship between histone
+            modifications and DNA methylation in cancer.
+            <a class="text-link" href="#publications">Explore the publications →</a>
           </p>
           <p>
-            I maintain <strong>bio_know_base</strong>, a GitHub repository that consolidates my
-            bioinformatics knowledge — methodological summaries, analysis scripts, and reusable
-            templates accumulated through hands-on NGS projects.
-          </p>
-          <p>
-            Currently exploring <strong>AI-driven drug discovery (AIDD)</strong> and
-            <strong>virtual cell</strong> technologies.
+            I use <strong>R, Python and Shell</strong> to turn analysis steps into reusable
+            workflows, and collect methods, scripts and practical notes in
+            <a class="text-link" href="#projects"><strong>bio_know_base</strong></a>.
+            I am also learning about <strong>AI-driven drug discovery</strong> and
+            <strong>virtual cell models</strong>.
           </p>
           <div class="about-tags">
             <span class="tag">Experimental Design</span>
@@ -135,22 +144,11 @@
         </div>
         <div class="about-card reveal" style="--delay: 0.2s">
           <div class="profile-avatar">
-            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#10b981;stop-opacity:1"/>
-                  <stop offset="100%" style="stop-color:#059669;stop-opacity:1"/>
-                </linearGradient>
-              </defs>
-              <circle cx="100" cy="100" r="95" fill="url(#avatarGrad)" opacity="0.1"/>
-              <circle cx="100" cy="80" r="35" fill="url(#avatarGrad)" opacity="0.8"/>
-              <path d="M 40 180 Q 100 120 160 180 Z" fill="url(#avatarGrad)" opacity="0.8"/>
-              <text x="100" y="195" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.5">Bioinformatics Engineer</text>
-            </svg>
+            <img src="https://github.com/nihaonewworld.png?size=240" alt="Qiang's GitHub avatar" width="120" height="120" loading="lazy" decoding="async">
           </div>
           <div class="profile-info">
-            <h3>Bioinformatics Engineer</h3>
-            <p>Experimental Design &amp; Data Interpretation</p>
+            <h3>Qiang</h3>
+            <p>Bioinformatics Engineer<br>Experimental Design &amp; Data Interpretation</p>
             <div class="profile-meta">
               <div class="meta-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -178,18 +176,7 @@
                 <span>AIDD &amp; Virtual Cell</span>
               </div>
             </div>
-            <div class="social-links">
-              <a href="#" class="social-link" title="GitHub">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-link" title="ORCID">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378a.845.845 0 1 1 0 1.69.845.845 0 0 1 0-1.69zm-.462 3.42h1.69v10.4h-1.69V7.798zm4.381 0h4.563c4.344 0 6.948 3.097 6.948 5.193 0 2.097-2.604 5.207-6.948 5.207h-4.563V7.798zm1.69 1.518v7.354h2.613c3.698 0 5.211-2.579 5.211-3.679 0-1.1-1.513-3.675-5.211-3.675h-2.613z"/>
-                </svg>
-              </a>
-            </div>
+            <div class="social-links"><a href="https://github.com/nihaonewworld" class="btn btn-outline btn-sm">GitHub ↗</a><a href="https://orcid.org/0000-0001-9547-9138" class="btn btn-outline btn-sm">ORCID ↗</a></div>
           </div>
         </div>
       </div>
@@ -201,7 +188,8 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">02 / Research</span>
-        <h2 class="section-title">Research Interests</h2>
+        <h2 class="section-title">Research Focus</h2>
+        <p class="section-intro">Gene regulation and cellular heterogeneity are central to my work. AI for biology is an emerging learning direction.</p>
       </div>
       <div class="research-grid">
         <div class="research-card reveal">
@@ -218,7 +206,7 @@
             </svg>
           </div>
           <h3>Multi-omics</h3>
-          <p>Integrative analysis of transcriptomics (RNA-seq differential expression) and epigenomics (ChIP-seq / ATAC-seq / BS-seq methylation), combined with pathway enrichment for multi-layer data interpretation.</p>
+          <p>Connecting gene expression, chromatin accessibility and DNA methylation to study gene regulation. My focus is on interpreting differential signals together across omics layers.</p>
           <div class="research-tools">
             <span>edgeR</span><span>DESeq2</span><span>MACS2</span><span>Bismark</span>
           </div>
@@ -237,7 +225,7 @@
             </svg>
           </div>
           <h3>Single-Cell &amp; Spatial</h3>
-          <p>Single-cell and spatial transcriptomics: QC and clustering, cell type annotation, trajectory inference, spatial domain detection, and deconvolution for Visium / Stereo-seq data.</p>
+          <p>Characterizing cell types, cell states and their tissue context through single-cell and spatial transcriptomics. Analysis spans quality control, annotation, trajectory inference and spatial organization.</p>
           <div class="research-tools">
             <span>Seurat</span><span>Scanpy</span><span>Squidpy</span><span>STAGATE</span>
           </div>
@@ -253,8 +241,8 @@
               <circle cx="21.5" cy="12" r="1.5"/>
             </svg>
           </div>
-          <h3>Virtual Cell</h3>
-          <p>Exploring AI-based virtual cell models that integrate multi-scale omics data to simulate and predict cellular states and dynamics.</p>
+          <h3>Virtual Cell · Exploring</h3>
+          <p>Learning how models of single-cell data represent cellular states, with an interest in linking these representations to biological interpretation.</p>
           <div class="research-tools">
             <span>Foundation Models</span><span>scGPT</span><span>PyTorch</span><span>Single-cell Atlas</span>
           </div>
@@ -267,8 +255,8 @@
               <path d="M12 2v20"/>
             </svg>
           </div>
-          <h3>AIDD (Exploring)</h3>
-          <p>Exploring AI-driven drug discovery: molecular representation learning, graph neural networks for drug-target interaction, and AI-assisted compound screening.</p>
+          <h3>AI for Drug Discovery · Exploring</h3>
+          <p>Exploring molecular representation learning and drug–target interaction modeling, while building a foundation in deep learning and its applications to drug discovery.</p>
           <div class="research-tools">
             <span>RDKit</span><span>PyTorch</span><span>GNN</span><span>DTI</span>
           </div>
@@ -282,7 +270,8 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">03 / Skills</span>
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="section-title">Analysis Toolkit</h2>
+        <p class="section-intro">The languages, assays and analysis frameworks behind my day-to-day work.</p>
       </div>
       <div class="research-grid">
         <div class="research-card reveal">
@@ -294,35 +283,11 @@
           </div>
           <h3>Programming</h3>
           <p>Core languages for NGS data analysis, pipeline development, and automation.</p>
-          <div class="skill-bars">
-            <div class="skill-bar">
-              <div class="skill-bar-header">
-                <span class="skill-name">R</span>
-                <span class="skill-level">Expert</span>
-              </div>
-              <div class="skill-track">
-                <div class="skill-fill" data-level="90%"></div>
-              </div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-header">
-                <span class="skill-name">Python</span>
-                <span class="skill-level">Advanced</span>
-              </div>
-              <div class="skill-track">
-                <div class="skill-fill" data-level="80%"></div>
-              </div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-header">
-                <span class="skill-name">Shell</span>
-                <span class="skill-level">Advanced</span>
-              </div>
-              <div class="skill-track">
-                <div class="skill-fill" data-level="75%"></div>
-              </div>
-            </div>
-          </div>
+          <dl class="skill-uses">
+            <div><dt>R</dt><dd>Statistical analysis, Bioconductor &amp; visualization</dd></div>
+            <div><dt>Python</dt><dd>Data processing &amp; single-cell analysis</dd></div>
+            <div><dt>Shell</dt><dd>Workflow automation &amp; sequencing utilities</dd></div>
+          </dl>
         </div>
         <div class="research-card reveal" style="--delay: 0.1s">
           <div class="research-icon">
@@ -338,7 +303,7 @@
             </svg>
           </div>
           <h3>Multi-omics Analysis</h3>
-          <p>Hands-on experience across genomics and epigenomics assays, from data processing to biological interpretation.</p>
+          <p>Sequencing data processing, differential analysis and functional interpretation across transcriptomic, epigenomic and genomic assays.</p>
           <div class="research-tools">
             <span>WGBS</span><span>ChIP-seq</span><span>ATAC-seq</span><span>CUT&amp;Tag</span><span>RNA-seq</span><span>RIP-seq</span><span>WGS/WES</span><span>Ribo-seq</span>
           </div>
@@ -355,7 +320,7 @@
             </svg>
           </div>
           <h3>Single-Cell &amp; Spatial</h3>
-          <p>Single-cell and spatial transcriptomics platforms, from library types to analysis toolkits.</p>
+          <p>Quality control, clustering, cell-type annotation and downstream interpretation using R and Python analysis frameworks.</p>
           <div class="research-tools">
             <span>Droplet-based scRNA-seq</span><span>Smart-seq2</span><span>Seurat</span><span>Scanpy</span>
           </div>
@@ -371,8 +336,8 @@
               <circle cx="20.5" cy="12" r="1.5"/>
             </svg>
           </div>
-          <h3>AI</h3>
-          <p>Building AI-driven approaches for drug discovery and virtual cell modeling.</p>
+          <h3>Deep Learning · Learning</h3>
+          <p>Learning the foundations of deep learning and exploring their use in drug discovery and virtual cell modeling.</p>
           <div class="research-tools">
             <span>PyTorch · Learning</span>
           </div>
@@ -386,23 +351,23 @@
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">04 / Projects</span>
-        <h2 class="section-title">Featured Project</h2>
+        <h2 class="section-title">A Knowledge Base for Daily Analysis</h2>
       </div>
       <div class="projects-grid projects-single">
         <div class="project-card project-featured reveal">
           <div class="project-header">
             <span class="project-category">Knowledge Base</span>
             <div class="project-links">
-              <a href="https://github.com/your-username/bio_know_base" class="project-link" title="GitHub Repository">
+              <a href="https://github.com/nihaonewworld" class="project-link" title="GitHub profile" aria-label="Visit my GitHub profile">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
               </a>
             </div>
           </div>
           <h3 class="project-title">bio_know_base</h3>
           <p class="project-desc">
-            A comprehensive bioinformatics knowledge repository consolidating years of NGS data analysis
-            experience. Covers methodological summaries, reusable analysis scripts, pipeline templates,
-            and best-practice documentation across two core domains:
+            I maintain bio_know_base to make analysis knowledge easier to revisit and reuse.
+            It brings together method summaries, analysis scripts and workflow templates
+            from my NGS work, organized around two main areas:
           </p>
           <div class="project-domains">
             <div class="domain-item">
@@ -414,7 +379,7 @@
               </span>
               <div>
                 <strong>Multi-omics</strong>
-                <p>RNA-seq DE, ChIP-seq / ATAC-seq, BS-seq methylation, pathway enrichment</p>
+                <p>Differential expression, chromatin profiling, DNA methylation and pathway analysis</p>
               </div>
             </div>
             <div class="domain-item">
@@ -430,7 +395,7 @@
               </span>
               <div>
                 <strong>Single-Cell &amp; Spatial</strong>
-                <p>scRNA-seq QC / clustering / trajectory, Visium / Stereo-seq deconvolution</p>
+                <p>Quality control, cell annotation, trajectory analysis and spatial interpretation</p>
               </div>
             </div>
           </div>
@@ -439,57 +404,35 @@
     </div>
   </section>
 
-  <!-- Publications Section -->
+  <section class="section" id="workflow">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">05 / Approach</span><h2 class="section-title">A question-first workflow</h2><p class="section-intro">I start with the biological comparison and keep analysis decisions traceable through to the final interpretation.</p></div>
+      <ol class="workflow-grid">
+        <li><span class="step-number">01</span><h3>Frame the question</h3><p>Define the biological comparison, experimental unit, replicates and relevant covariates before choosing an analysis.</p></li>
+        <li><span class="step-number">02</span><h3>Understand the data</h3><p>Review sample metadata, sequencing quality and reference compatibility. Make quality decisions explicit.</p></li>
+        <li><span class="step-number">03</span><h3>Connect the evidence</h3><p>Bring statistical results, annotations and complementary omics layers together to interpret the biological question.</p></li>
+        <li><span class="step-number">04</span><h3>Make it reusable</h3><p>Keep scripts, parameters, software versions and interpretation notes alongside the results.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="notes">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">06 / Knowledge</span><h2 class="section-title">What I Document</h2><p class="section-intro">Method notes explain the reasoning; scripts capture the steps; templates make the next analysis easier to start.</p></div>
+      <div class="research-grid knowledge-grid">
+        <article class="research-card"><span class="section-tag">METHOD NOTES</span><h3>Why this approach?</h3><p>The biological question, the comparison of interest and the assumptions behind the analysis. Notes preserve the reasoning behind a method choice.</p><div class="research-tools"><span>Study design</span><span>Contrasts</span></div></article>
+        <article class="research-card"><span class="section-tag">ANALYSIS SCRIPTS</span><h3>How was it analyzed?</h3><p>Reusable steps for processing data, exploring results and preparing figures, with the inputs and parameters kept close to the code.</p><div class="research-tools"><span>Multi-omics</span><span>Annotation</span></div></article>
+        <article class="research-card"><span class="section-tag">WORKFLOW TEMPLATES</span><h3>What can be reused?</h3><p>A starting structure for recurring analyses: sample metadata, reference choices, software versions and the notes needed to revisit results.</p><div class="research-tools"><span>Workflows</span><span>Documentation</span></div></article>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="publications">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">05 / Publications</span>
-        <h2 class="section-title">Publications</h2>
-      </div>
-      <div class="pub-orcid reveal">
-        <div class="pub-orcid-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378a.845.845 0 1 1 0 1.69.845.845 0 0 1 0-1.69zm-.462 3.42h1.69v10.4h-1.69V7.798zm4.381 0h4.563c4.344 0 6.948 3.097 6.948 5.193 0 2.097-2.604 5.207-6.948 5.207h-4.563V7.798zm1.69 1.518v7.354h2.613c3.698 0 5.211-2.579 5.211-3.679 0-1.1-1.513-3.675-5.211-3.675h-2.613z"/>
-          </svg>
-        </div>
-        <div class="pub-orcid-info">
-          <h3>Full publication record on ORCID</h3>
-          <p>Peer-reviewed articles and preprints are listed and continuously updated on my ORCID profile.</p>
-          <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
-            View on ORCID
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-        </div>
-      </div>
+      <div class="section-header"><span class="section-tag">07 / Publications</span><h2 class="section-title">Selected publications</h2><p class="section-intro">Two co-first-author studies on developmental and cancer epigenomics. Publication records are available on my <a class="text-link" href="https://orcid.org/0000-0001-9547-9138">ORCID profile ↗</a>.</p></div>
       <div class="publications-list">
-        <!--
-          Add your publications here, newest first. Template:
-          <div class="pub-item reveal">
-            <div class="pub-year">2026</div>
-            <div class="pub-content">
-              <h3 class="pub-title">Publication title</h3>
-              <p class="pub-authors">Authors</p>
-              <p class="pub-journal"><em>Journal</em></p>
-              <div class="pub-links"><a href="#">DOI</a><a href="#">PubMed</a></div>
-            </div>
-          </div>
-        -->
-        <div class="pub-item reveal">
-          <div class="pub-year">2026</div>
-          <div class="pub-content">
-            <h3 class="pub-title">Your publication title here</h3>
-            <p class="pub-authors">Your name, et al.</p>
-            <p class="pub-journal"><em>Journal name</em></p>
-            <div class="pub-links">
-              <a href="#">DOI</a>
-              <a href="#">PubMed</a>
-            </div>
-          </div>
-        </div>
+        <article class="pub-item"><div class="pub-year">2024</div><div class="pub-content"><h3 class="pub-title"><a href="https://doi.org/10.1016/j.jgg.2023.10.006">Epigenetic and transcriptional landscapes during cerebral cortex development in a microcephaly mouse model</a></h3><p class="pub-journal"><em>Journal of Genetics and Genomics</em> · Co-first author</p><p class="project-desc">Research focus: epigenetic and transcriptional landscapes during cerebral cortex development in a microcephaly mouse model.</p><div class="pub-links"><a href="https://doi.org/10.1016/j.jgg.2023.10.006" aria-label="Read Epigenetic and transcriptional landscapes during cerebral cortex development in a microcephaly mouse model">Read publication ↗</a></div></div></article>
+        <article class="pub-item"><div class="pub-year">2023</div><div class="pub-content"><h3 class="pub-title"><a href="https://doi.org/10.1186/s12864-023-09341-1">Pan-cancer analysis revealed H3K4me1 at bivalent promoters premarks DNA hypermethylation during tumor development and identified the regulatory role of DNA methylation in relation to histone modifications</a></h3><p class="pub-journal"><em>BMC Genomics</em> · Co-first author</p><p class="project-desc">Research focus: the relationship between H3K4me1 at bivalent promoters and DNA hypermethylation during cancer development.</p><div class="pub-links"><a href="https://doi.org/10.1186/s12864-023-09341-1" aria-label="Read Pan-cancer analysis revealed H3K4me1 at bivalent promoters premarks DNA hypermethylation during tumor development and identified the regulatory role of DNA methylation in relation to histone modifications">Read publication ↗</a></div></div></article>
       </div>
     </div>
   </section>
@@ -498,72 +441,54 @@
   <section class="section section-alt" id="contact">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">06 / Contact</span>
+        <span class="section-tag">08 / Contact</span>
         <h2 class="section-title">Get in Touch</h2>
       </div>
       <div class="contact-grid">
         <div class="contact-info reveal">
           <p class="contact-lead">
-            Feel free to reach out regarding research collaboration, data analysis projects, or academic exchange.
+            I’m interested in discussions about gene regulation, multi-omics integration and single-cell or spatial data analysis, as well as ways to make computational research more reproducible.
           </p>
           <div class="contact-methods">
-            <a href="mailto:your.email@example.com" class="contact-method">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-              </div>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">your.email@example.com</span>
-              </div>
-            </a>
-            <a href="#" class="contact-method">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
-              </div>
-              <div>
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">@your-username</span>
-              </div>
-            </a>
+            <a href="https://github.com/nihaonewworld" class="contact-method"><div class="contact-icon" aria-hidden="true">↗</div><div><span class="contact-label">GitHub</span><span class="contact-value">@nihaonewworld</span></div></a>
+            <a class="contact-method" id="emailLink" hidden><div class="contact-icon" aria-hidden="true">@</div><div><span class="contact-label">Email</span><span class="contact-value" id="emailValue"></span></div></a>
           </div>
+          <p class="section-intro" id="contactUnavailable">Explore my public work and code on GitHub, or follow the publication links for the research behind it.</p>
         </div>
         <div class="contact-form-wrapper reveal" style="--delay: 0.2s">
-          <form class="contact-form" id="contactForm">
+          <div id="contactBrief"><span class="section-tag">LET’S CONNECT</span><h3>Start with the biological question</h3><p>A useful analysis discussion begins with the question, the data and the intended outcome:</p><ul><li>The biological question and intended comparison</li><li>Assay type, sample count and available metadata</li><li>Current analysis stage and expected outputs</li></ul><p>These details help connect an analysis plan to the biological question it needs to answer.</p></div>
+          <form class="contact-form" id="contactForm" hidden>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
+              <input type="text" id="name" name="name" required autocomplete="name" maxlength="100" placeholder="Your name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@institution.org">
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required placeholder="Collaboration / Question">
+              <input type="text" id="subject" name="subject" maxlength="200" required placeholder="Collaboration / Question">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+              <textarea id="message" name="message" rows="5" maxlength="4000" required placeholder="Your message..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">
-              Send Message
+              Open Email Draft
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="22" y1="2" x2="11" y2="13"/>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"/>
               </svg>
             </button>
-            <p class="form-note" id="formNote"></p>
+            <p class="form-note" id="formNote" role="status" aria-live="polite">Opens your email app. You review and send the message there.</p>
           </form>
         </div>
       </div>
     </div>
   </section>
 
+  </main>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -571,16 +496,16 @@
         <div class="footer-left">
           <a href="#hero" class="footer-logo">
             <span class="logo-icon">&#x1F9EC;</span>
-            <span>Bio<span class="accent">Info</span></span>
+            <span>Qiang<span class="accent">.</span></span>
           </a>
-          <p>Bioinformatics Engineer | NGS Data Science &amp; Pipeline Engineering</p>
+          <p>Qiang · Bioinformatics, gene regulation &amp; reproducible analysis</p>
         </div>
         <div class="footer-right">
-          <p>&copy; <span id="year"></span> All rights reserved.</p>
+          <p>&copy; <span id="year">2026</span> Qiang. All rights reserved.</p>
           <p class="footer-built">Built with HTML, CSS &amp; JavaScript. Hosted on GitHub Pages.</p>
         </div>
       </div>
-      <a href="#hero" class="back-to-top" id="backToTop">
+      <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="12" y1="19" x2="12" y2="5"/>
           <polyline points="5 12 12 5 19 12"/>
@@ -589,6 +514,7 @@
     </div>
   </footer>
 
+  <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
