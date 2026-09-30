@@ -282,3 +282,33 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (hover: none) and (pointer: coarse) and (orientation: landscape) {
   .hero, .section { padding-block: 36px; }
 }
+
+/* Content depth and a consistent visual hierarchy. */
+.hero-focus { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 38px; padding-top: 22px; border-top: 1px solid var(--line); }
+.hero-focus dt { color: var(--accent); font-size: 12px; font-weight: 600; }
+.hero-focus dd { margin-top: 5px; color: var(--muted); font-size: 14px; }
+.capability { padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.note-detail { margin-top: 22px; border-top: 1px solid var(--line); }
+.note-detail summary { padding-block: 14px; min-height: 44px; cursor: pointer; color: var(--accent); font-size: 15px; font-weight: 600; }
+.note-detail summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.note-detail[open] summary { border-bottom: 1px solid var(--line); }
+.note-detail code { font-size: .85em; overflow-wrap: anywhere; }
+.note-topic .note-caption { font-size: 12px; color: var(--accent); }
+.section-note { margin-top: 28px; color: var(--muted); font-size: 14px; }
+.analysis-record { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; margin-top: 48px; padding: 32px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.analysis-record h3 { max-width: 300px; line-height: 1.3; }
+.record-items > div + div { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.record-items dt { font-size: 15px; font-weight: 600; }
+.record-items dd { margin-top: 4px; color: var(--muted); font-size: 15px; }
+.contact-prompts { padding-left: 20px; margin-top: 24px; color: var(--muted); font-size: 14px; }
+.contact-prompts li + li { margin-top: 8px; }
+@media (max-width: 900px) { .capabilities { gap: 18px; } .capability { padding: 22px; } }
+@media (max-width: 768px) {
+  .analysis-record { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+  .analysis-record h3 { max-width: none; }
+}
+@media (max-width: 480px) {
+  .hero-focus { grid-template-columns: 1fr; gap: 16px; }
+  .workflow-grid { grid-template-columns: 1fr; }
+}
+@media print { .analysis-record, .note-topic { break-inside: avoid; } }

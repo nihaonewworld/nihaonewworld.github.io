@@ -41,7 +41,7 @@ The profile card includes icon links for GitHub, ORCID and Email, without progra
 - **Content and metadata:** `index.html`.
 - **GitHub:** `https://github.com/nihaonewworld`.
 - **Avatar:** `https://github.com/nihaonewworld.png?size=320`; GitHub/browser caching applies.
-- **Email:** `qcao2020@outlook.com`. Update both `js/config.js` and the static
+- **Email:** `qiangcao2014@gmail.com`. Update both `js/config.js` and the static
   email link/text in `index.html` when changing it. The static link works without JS.
 - **ORCID:** `https://orcid.org/0000-0001-9547-9138`.
 - **Content source:** `nihaonewworld/Bioinformatics_Study_Notes`, read through SSH
@@ -94,8 +94,8 @@ Touch, zoom gestures, nested scroll areas and reduced-motion preferences retain
 native scrolling. Keyboard, anchor and pointer interactions cancel pending easing.
 Sections retain their viewport minimum height, with content aligned toward the top.
 
-Typography is enlarged for the full-viewport layout. Study-note topics provide a concise overview; detailed analysis questions are
-omitted, and publications remain citations only.
+Typography is enlarged for the full-viewport layout. Study-note topics include keyboard-accessible expandable examples. The approach
+section explains analysis decisions and result context; publications remain citations only.
 
 After scrolling into a new section, the page gently aligns its top below the
 navigation bar once scrolling settles. It does not repeatedly realign the same
@@ -116,3 +116,14 @@ pointer tilt are desktop-only, so they do not interrupt iPhone swipes or pinch
 zoom. The scroll indicator remains decorative and does not intercept touches.
 Real-device iPhone/Safari testing is still required; static checks alone do not
 verify browser rendering or touch behavior.
+
+## September 2026 content refresh
+
+Expanded study-note previews use native `details` elements and work without JavaScript.
+The approach section now explains data context, analysis decisions and interpretation;
+the contact section includes a short guide for an initial message. New copy draws on
+existing portfolio content and the previously recorded study-note examples, without
+adding credentials, project outcomes or publication contribution claims.
+
+The canonical and social URL is `https://nihaonewworld.github.io/`. Update both if
+moving to a custom domain. No build tools, web fonts or additional dependencies were added.

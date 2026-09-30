@@ -9,8 +9,15 @@
   <meta property="og:title" content="Qiang | Bioinformatics Engineer">
   <meta property="og:description" content="NGS analysis, R, Python and Shell. Explore Qiang’s work in sequencing data analysis, biological interpretation and data visualization.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nihaonewworld.github.io/">
+  <meta property="og:site_name" content="Qiang — Bioinformatics">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Qiang | Bioinformatics Engineer">
+  <meta name="twitter:description" content="Sequencing data, biological questions and clear analysis. Explore my skills, study notes and publications.">
+  <link rel="canonical" href="https://nihaonewworld.github.io/">
   <title>Qiang | Bioinformatics Engineer</title>
-  <link rel="stylesheet" href="css/style.css?v=monet-9">
+  <link rel="stylesheet" href="css/style.css?v=monet-10">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F9EC;</text></svg>">
 </head>
@@ -40,7 +47,11 @@
         <p class="hero-intro">I’m Qiang, a bioinformatics engineer. I analyze sequencing data to understand gene regulation, cellular states and the biology behind the results.</p>
         <p class="hero-detail">Multi-omics · Single-cell · Spatial transcriptomics</p>
         <p class="hero-context">My study notes connect sequencing principles with practical analysis: evaluating cell quality, comparing clustering choices, interpreting epigenetic signals and presenting results clearly.</p>
-        <div class="actions"><a class="button primary" href="#skills">Explore my skills <span aria-hidden="true">↗</span></a><a class="text-link" href="#projects">Explore my knowledge base <span aria-hidden="true">→</span></a></div>
+        <div class="actions"><a class="button primary" href="#skills">Explore my skills <span aria-hidden="true">↗</span></a><a class="text-link" href="#projects">Read my study notes <span aria-hidden="true">→</span></a></div>
+        <dl class="hero-focus" aria-label="Analysis focus">
+          <div><dt>Biological questions</dt><dd>Gene regulation &amp; cellular states</dd></div>
+          <div><dt>Working toolkit</dt><dd>R · Python · Shell</dd></div>
+        </dl>
       </div>
       <aside class="profile" aria-label="About Qiang">
         <img src="https://github.com/nihaonewworld.png?size=320" alt="Qiang’s GitHub avatar" width="112" height="112" decoding="async">
@@ -49,7 +60,7 @@
         <p>Integrating data quality assessment, statistical analysis, and biological interpretation.</p>
         <a class="text-link" href="https://github.com/nihaonewworld"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.99 1.6 3.29.7.1-.73.4-1.23.72-1.51-2.5-.29-5.14-1.25-5.14-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.27-5.15 5.55.41.35.77 1.03.77 2.08v3.1c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg><span>GitHub</span></a>
         <a class="text-link" href="https://orcid.org/0000-0001-9547-9138"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><g fill="#fff"><circle cx="6.8" cy="6.4" r="1.1"/><path d="M5.85 9h1.9v10h-1.9zM10 9h4.1c3.3 0 5.4 1.9 5.4 5s-2.1 5-5.4 5H10zm1.9 1.7v6.6h2.2c2.3 0 3.5-1.2 3.5-3.3s-1.2-3.3-3.5-3.3z"/></g></svg><span>ORCID</span></a>
-        <a class="text-link" id="profileEmailLink" href="mailto:qcao2020@outlook.com" aria-label="Email Qiang at qcao2020@outlook.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Email</span></a>
+        <a class="text-link" id="profileEmailLink" href="mailto:qiangcao2014@gmail.com" aria-label="Email Qiang at qiangcao2014@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Email</span></a>
       </aside>
     </section>
 
@@ -70,15 +81,24 @@
         <dl class="project-contents"><div><dt><span>01</span> Bioinformatics</dt><dd>Sequencing technologies, transcriptomics, epigenomics, gene function and single-cell methods.</dd></div><div><dt><span>02</span> Computing</dt><dd>Statistics, data structures, SQL, Git, Docker and deep-learning study notes.</dd></div><div><dt><span>03</span> Data science for NGS</dt><dd>R and Python examples, Seurat and Scanpy notebooks, spatial analysis and figure preparation.</dd></div></dl>
       </article>
       <div class="note-topics" id="note-topics" aria-label="Topics in my study notes">
-        <article class="note-topic"><span class="eyebrow">SINGLE-CELL</span><h3>Quality, clusters &amp; cell identity</h3><p>Notes on doublet detection, normalization, integration and annotation, alongside code for comparing principal components and clustering resolutions.</p><ul class="tags"><li>Seurat / Scanpy</li><li>DoubletFinder</li><li>clustree</li></ul></article>
-        <article class="note-topic"><span class="eyebrow">SPATIAL DATA</span><h3>From counts to tissue context</h3><p>Study notes covering Stereo-seq and Visium processing, image quality checks, Space Ranger and SAW, with downstream Seurat and Stereopy examples.</p><ul class="tags"><li>Visium / Visium HD</li><li>Stereo-seq</li><li>Stereopy</li></ul></article>
-        <article class="note-topic"><span class="eyebrow">EPIGENOMICS</span><h3>Reading regulatory signals</h3><p>Dedicated notes on DNA modification, histone marks, chromatin accessibility and chromosome conformation, supported by gene-function and motif-analysis topics.</p><ul class="tags"><li>DNA methylation</li><li>Chromatin</li><li>Motifs</li></ul></article>
+        <article class="note-topic"><span class="eyebrow">SINGLE-CELL</span><h3>Quality, clusters &amp; cell identity</h3><p>Notes on doublet detection, normalization, integration and annotation, alongside code for comparing principal components and clustering resolutions.</p><ul class="tags"><li>Seurat / Scanpy</li><li>DoubletFinder</li><li>clustree</li></ul><details class="note-detail"><summary>Inside the notes</summary><p>The clustering-resolution example, <code>scan_clustering_resolution.R</code>, explores how clustering choices change the grouping of cells. Related notes cover quality filtering, doublet detection and annotation.</p><p class="note-caption">Learning example · parameter comparison</p></details></article>
+        <article class="note-topic"><span class="eyebrow">SPATIAL DATA</span><h3>From counts to tissue context</h3><p>Study notes covering Stereo-seq and Visium processing, image quality checks, Space Ranger and SAW, with downstream Seurat and Stereopy examples.</p><ul class="tags"><li>Visium / Visium HD</li><li>Stereo-seq</li><li>Stereopy</li></ul><details class="note-detail"><summary>Inside the notes</summary><p>Topics follow the path from platform-specific processing to downstream exploration: image quality, expression matrices and the tissue context of spatial patterns.</p><p class="note-caption">Method notes · spatial transcriptomics</p></details></article>
+        <article class="note-topic"><span class="eyebrow">EPIGENOMICS</span><h3>Reading regulatory signals</h3><p>Dedicated notes on DNA modification, histone marks, chromatin accessibility and chromosome conformation, supported by gene-function and motif-analysis topics.</p><ul class="tags"><li>DNA methylation</li><li>Chromatin</li><li>Motifs</li></ul><details class="note-detail"><summary>Inside the notes</summary><p>The collection groups chromatin accessibility, histone modifications and DNA methylation with gene-function and motif topics, connecting different ways of studying regulation.</p><p class="note-caption">Topic collection · gene regulation</p></details></article>
       </div>
+      <p class="section-note">These are study materials and analysis examples from an evolving personal collection.</p>
     </section>
 
     <section class="section container" id="workflow">
       <div class="section-heading"><p class="eyebrow">03 / APPROACH</p><h2>A clear path through the data.</h2><p>I keep the biological question and the analysis decisions connected.</p></div>
-      <ol class="workflow-grid"><li><span>01</span><h3>Define</h3><p>Clarify the question, sample groups, replicates and expected outputs.</p></li><li><span>02</span><h3>Check</h3><p>Review metadata, data quality and reference compatibility before analysis.</p></li><li><span>03</span><h3>Analyze</h3><p>Connect statistical results, annotations and evidence across assays.</p></li><li><span>04</span><h3>Interpret</h3><p>Explain the biological meaning, distinguish associations from mechanisms and make limitations explicit.</p></li></ol>
+      <ol class="workflow-grid"><li><span>01</span><h3>Define</h3><p>Start with the biological question, sample groups and replicates. Define the comparison and the outputs that would make the result useful.</p></li><li><span>02</span><h3>Check</h3><p>Review sample metadata, quality summaries and reference compatibility. Make batch structure and potential confounders visible before interpreting differences.</p></li><li><span>03</span><h3>Analyze</h3><p>Choose methods that fit the question and data. Keep parameters and analysis decisions traceable, then connect statistical results with annotations and evidence across assays.</p></li><li><span>04</span><h3>Interpret</h3><p>Bring figures and biological context together. Distinguish associations from mechanisms, make limitations explicit and identify questions for follow-up.</p></li></ol>
+      <div class="analysis-record">
+        <div><p class="eyebrow">MAKING RESULTS READABLE</p><h3>Keep the reasoning with the result.</h3></div>
+        <dl class="record-items">
+          <div><dt>Data context</dt><dd>Sample definitions, quality observations and the comparison being made.</dd></div>
+          <div><dt>Analysis decisions</dt><dd>Methods, parameters and assumptions needed to understand the analysis.</dd></div>
+          <div><dt>Interpretation</dt><dd>Annotated figures, biological context and the limits of the evidence.</dd></div>
+        </dl>
+      </div>
     </section>
 
     <section class="section container" id="publications">
@@ -89,12 +109,12 @@
     </section>
 
     <section class="section container" id="contact">
-      <div class="contact-panel"><div><p class="eyebrow">05 / CONTACT</p><h2>Let’s talk data.</h2><p>For data analysis, biological interpretation or technical exchange, start with the question, the data you have and what you want to understand.</p></div><div class="contact-actions"><a class="email-link" id="emailLink" href="mailto:qcao2020@outlook.com"><span id="emailValue">qcao2020@outlook.com</span> <span aria-hidden="true">↗</span></a><button class="button secondary" id="copyEmail" hidden>Copy email</button><p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p><div class="social-links"><a href="https://github.com/nihaonewworld">GitHub ↗</a><a href="https://orcid.org/0000-0001-9547-9138">ORCID ↗</a></div></div></div>
+      <div class="contact-panel"><div><p class="eyebrow">05 / CONTACT</p><h2>Let’s talk data.</h2><p>For data analysis, biological interpretation or technical exchange, start with the question, the data you have and what you want to understand.</p><ul class="contact-prompts" aria-label="What to include in your message"><li>The biological question or analysis challenge</li><li>The assay, sample groups and current data stage</li><li>The result or figure you want to discuss</li></ul></div><div class="contact-actions"><a class="email-link" id="emailLink" href="mailto:qiangcao2014@gmail.com"><span id="emailValue">qiangcao2014@gmail.com</span> <span aria-hidden="true">↗</span></a><button class="button secondary" id="copyEmail" hidden>Copy email</button><p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p><div class="social-links"><a href="https://github.com/nihaonewworld">GitHub ↗</a><a href="https://orcid.org/0000-0001-9547-9138">ORCID ↗</a></div></div></div>
     </section>
   </main>
   <footer class="container footer"><p>© <span id="year">2026</span> Qiang</p><p>Bioinformatics. Thoughtfully built.</p><a href="#hero">Back to top ↑</a></footer>
   <div class="scroll-cue" id="scrollCue" aria-hidden="true"><span class="scroll-mouse"><span class="scroll-wheel"></span></span></div>
-  <script src="js/config.js?v=monet-9"></script>
-  <script src="js/main.js?v=monet-9"></script>
+  <script src="js/config.js?v=monet-10"></script>
+  <script src="js/main.js?v=monet-10"></script>
 </body>
 </html>
